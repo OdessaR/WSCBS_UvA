@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: authentication-system
+  name: authentication-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: authentication-system
+  template:
+    metadata:
+      labels:
+        app: authentication-system
+    spec:
+      nodeSelector:
+        pool-name: default
+      containers:
+        - name: authentication-system
+          image: odessa0510/assignment3:authentication-system
+          ports:
+            - containerPort: 5001
+      imagePullSecrets:
+        - name: regcred
+
+
+

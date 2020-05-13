@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: authentication-system
+  labels:
+    app: authentication-system
+spec:
+  ports:
+  - port: 5001
+    targetPort: 5001
+    protocol: TCP
+  type: LoadBalancer
+  selector:
+    app: authentication-system
