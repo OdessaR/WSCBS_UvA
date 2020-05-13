@@ -22,7 +22,7 @@ spec:
         pool-name: default
       containers:
         - name: url-shortner
-          image: odessa0510/assignment3:url-shortner
+          image: odessa0510/assignment3:url-shortner2
           ports:
             - containerPort: 80
       imagePullSecrets:

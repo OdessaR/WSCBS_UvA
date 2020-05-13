@@ -22,7 +22,7 @@ spec:
         pool-name: default
       containers:
         - name: authentication-system
-          image: odessa0510/assignment3:authentication-system
+          image: odessa0510/assignment3:authentication-system2
           ports:
             - containerPort: 5001
       imagePullSecrets:
