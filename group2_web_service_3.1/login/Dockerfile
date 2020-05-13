@@ -5,3 +5,4 @@ RUN pip3 install flask
 RUN pip3 install pyjwt
 EXPOSE 80
 
+CMD [ "python3", "/app/app.py" ]

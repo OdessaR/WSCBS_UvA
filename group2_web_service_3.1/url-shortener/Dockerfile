@@ -8,3 +8,5 @@ RUN pip3 install sqlalchemy
 RUN pip3 install flask_jsonpify
 RUN pip3 install nanoid
 EXPOSE 80
+
+CMD [ "python3", "/app/app.py" ]
